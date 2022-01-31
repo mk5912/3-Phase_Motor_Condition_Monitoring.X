@@ -1,11 +1,11 @@
 # This Is My University Final Year Project!
 
-## 3-Phase Motor Conndision Monitoring System.
+## 3-Phase Motor Condition Monitoring System.
 
 ### Goal of the project:
-My goal for this project is to have a functioning and viable product for moniorring the condition of two 3-phase motors used in industrial cooling circuits that allow normal opperation of high voltage equipment. I plan to make this come to fruition by designing, building and testing a system that will moitor the drive current, noise, skid vibrations and surface temperatures produced by two motors simultaneously.
+My goal for this project is to have a functioning and viable product for monitoring the condition of two 3-phase motors used in industrial cooling circuits that allow normal operation of high voltage equipment. I plan to make this come to fruition by designing, building and testing a system that will monitor the drive current, noise, skid vibrations and surface temperatures produced by two motors simultaneously.
 
-### How I plan to acheive this goal:
+### How I plan to achieve this goal:
 - I have already started by identifying the components that I will use which are (excluding a few others) as follows;
   1. PIC18F04Q40 microprocessor
   2. Solid state linear current sensor

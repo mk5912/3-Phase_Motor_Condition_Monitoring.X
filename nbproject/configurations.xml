@@ -20,6 +20,68 @@
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="Git Files" projectFiles="true">
+        <logicalFolder name=".git" displayName=".git" projectFiles="true">
+          <logicalFolder name="hooks" displayName="hooks" projectFiles="true">
+            <itemPath>.git/hooks/applypatch-msg.sample</itemPath>
+            <itemPath>.git/hooks/commit-msg.sample</itemPath>
+            <itemPath>.git/hooks/fsmonitor-watchman.sample</itemPath>
+            <itemPath>.git/hooks/post-update.sample</itemPath>
+            <itemPath>.git/hooks/pre-applypatch.sample</itemPath>
+            <itemPath>.git/hooks/pre-commit.sample</itemPath>
+            <itemPath>.git/hooks/pre-merge-commit.sample</itemPath>
+            <itemPath>.git/hooks/pre-push.sample</itemPath>
+            <itemPath>.git/hooks/pre-rebase.sample</itemPath>
+            <itemPath>.git/hooks/pre-receive.sample</itemPath>
+            <itemPath>.git/hooks/prepare-commit-msg.sample</itemPath>
+            <itemPath>.git/hooks/push-to-checkout.sample</itemPath>
+            <itemPath>.git/hooks/update.sample</itemPath>
+          </logicalFolder>
+          <logicalFolder name="info" displayName="info" projectFiles="true">
+            <itemPath>.git/info/exclude</itemPath>
+          </logicalFolder>
+          <logicalFolder name="logs" displayName="logs" projectFiles="true">
+            <logicalFolder name="refs" displayName="refs" projectFiles="true">
+              <logicalFolder name="heads" displayName="heads" projectFiles="true">
+                <itemPath>.git/logs/refs/heads/main</itemPath>
+              </logicalFolder>
+              <logicalFolder name="remotes" displayName="remotes" projectFiles="true">
+                <logicalFolder name="origin" displayName="origin" projectFiles="true">
+                  <itemPath>.git/logs/refs/remotes/origin/HEAD</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <itemPath>.git/logs/HEAD</itemPath>
+          </logicalFolder>
+          <logicalFolder name="objects" displayName="objects" projectFiles="true">
+            <logicalFolder name="info" displayName="info" projectFiles="true">
+            </logicalFolder>
+            <logicalFolder name="pack" displayName="pack" projectFiles="true">
+              <itemPath>.git/objects/pack/pack-3938a788d1595e5165af172c6e7a0e7b20735f19.pack</itemPath>
+              <itemPath>.git/objects/pack/pack-3938a788d1595e5165af172c6e7a0e7b20735f19.idx</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="refs" displayName="refs" projectFiles="true">
+            <logicalFolder name="heads" displayName="heads" projectFiles="true">
+              <itemPath>.git/refs/heads/main</itemPath>
+            </logicalFolder>
+            <logicalFolder name="remotes" displayName="remotes" projectFiles="true">
+              <logicalFolder name="origin" displayName="origin" projectFiles="true">
+                <itemPath>.git/refs/remotes/origin/HEAD</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="tags" displayName="tags" projectFiles="true">
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>.git/FETCH_HEAD</itemPath>
+          <itemPath>.git/HEAD</itemPath>
+          <itemPath>.git/config</itemPath>
+          <itemPath>.git/description</itemPath>
+          <itemPath>.git/index</itemPath>
+          <itemPath>.git/packed-refs</itemPath>
+        </logicalFolder>
+        <itemPath>README.md</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -45,6 +107,9 @@
       <itemPath>Test.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
@@ -55,7 +120,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.35</languageToolchainVersion>
+        <languageToolchainVersion>2.32</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
