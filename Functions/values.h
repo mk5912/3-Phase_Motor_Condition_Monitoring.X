@@ -12,6 +12,7 @@
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include <stdint.h>
 #include <stdbool.h>
+#include <math.h>
 #include "../mcc_generated_files/adcc.h"
 
 int getTemperature(adcc_channel_t pin);

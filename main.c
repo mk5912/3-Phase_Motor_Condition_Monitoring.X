@@ -18,15 +18,18 @@ void main(void)
     while (1)
     {
         // Transmit the values of the two temperature probes.
-        send("t1",getTemperature(adc_TEMP1));
-        send("t2",getTemperature(adc_TEMP2));
+        send("t1", getTemperature(adc_TEMP1));
+        send("t2", getTemperature(adc_TEMP2));
         
         // Transmit the values of the two hall effect sensors.
-        send("h1",);
+        send("h1", getHall(adc_HALL1));
+        send("h2", getHall(adc_HALL2));
         
         // Transmit the recorded decibel level.
+        send("vib", getVibration());
         
         // Transmit the recorded vibration value.
+        send("noise", getNoise());
     }
 }
 /**

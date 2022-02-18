@@ -19,15 +19,15 @@ int getHall(adcc_channel_t pin){
 }
 
 // Returns the decibel value of noise.
-int getNoise(adcc_channel_t pin){
-    int noise;
+int getNoise(){
+    int noise = map(0, 4095, 0.001, 1000, ADCC_GetSingleConversion(adc_NOISE));
     
-    return noise
+    return log10f(noise);
 }
 
 // Returns the current vibration of the monitoring device.
-int getVibration(adcc_channel_t pin){
-    int vib;
+int getVibration(){
+    int vib = ADCC_GetSingleConversion(adc_vib);
     
     return vib;
 }
