@@ -5,7 +5,7 @@
 
 #include "mcc_generated_files/mcc.h"
 #include "Functions/comms.h"
-#include "Functions/temp.h"
+#include "Functions/values.h"
 
 /*
                          Main application
@@ -15,19 +15,18 @@ void main(void)
     // Initialize the device
     SYSTEM_Initialize();
 
-    // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
-    // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
     while (1)
     {
-        // Add your application code
+        // Transmit the values of the two temperature probes.
+        send("t1",getTemperature(adc_TEMP1));
+        send("t2",getTemperature(adc_TEMP2));
+        
+        // Transmit the values of the two hall effect sensors.
+        send("h1",);
+        
+        // Transmit the recorded decibel level.
+        
+        // Transmit the recorded vibration value.
     }
 }
 /**

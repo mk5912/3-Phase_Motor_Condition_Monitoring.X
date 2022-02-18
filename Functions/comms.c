@@ -7,6 +7,10 @@
 
 #include "comms.h"
 
-void send() {
+void send(const char message, int value) {
+    
+}
+
+const char recieve(){
     
 }

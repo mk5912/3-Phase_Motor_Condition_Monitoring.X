@@ -16,6 +16,12 @@
 
 int getTemperature(adcc_channel_t pin);
 
+int getHall(adcc_channel_t pin);
+
+int getNoise(adcc_channel_t pin);
+
+int getVibration(adcc_channel_t pin);
+
 map(int valMin, int valMax, int outMin, int outMax, int val);
 
 #ifdef	__cplusplus

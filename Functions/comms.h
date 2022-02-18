@@ -13,9 +13,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-void send();
+void send(const char message, int value);
 
-void recieve();    
+const char recieve();    
 
 
 #ifdef	__cplusplus
