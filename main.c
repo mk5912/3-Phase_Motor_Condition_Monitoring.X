@@ -5,6 +5,7 @@
 
 #include "mcc_generated_files/mcc.h"
 #include "Functions/comms.h"
+#include "Functions/temp.h"
 
 /*
                          Main application

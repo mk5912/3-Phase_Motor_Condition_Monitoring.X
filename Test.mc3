@@ -10161,12 +10161,12 @@
          <hash>48db74ee81f8745ddbdd2e45fad45239812109f065a3b750fb957ae36a463fc4</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\adcc.h</file>
-         <hash>c8f18cbf7bd4e420aa53b6bb2e98b5cd2bb475a0848b3136562eacc52c31043c</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\pin_manager.h</file>
          <hash>1edaa54ad513d3cbe6e75e758364dd55f217a65db4a1d95edb4022bcdc72bc88</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adcc.h</file>
+         <hash>c8f18cbf7bd4e420aa53b6bb2e98b5cd2bb475a0848b3136562eacc52c31043c</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>

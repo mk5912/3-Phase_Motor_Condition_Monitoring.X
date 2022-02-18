@@ -7,8 +7,6 @@
 
 #include "comms.h"
 
-int main(void) {
-    /* Replace with your application code */
-    while (1) {
-    }
+void send() {
+    
 }

@@ -1,22 +1,22 @@
 /* 
- * File: comms.h
+ * File: temp.h
  * Author: Daniel Hickey
- * Comments: Function declarations for data communication.
+ * Comments: Function declarations for temperature analysis.
  */
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef COMMS_H
-#define	COMMS_H
+#ifndef TEMP_H
+#define	TEMP_H
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include <stdint.h>
 #include <stdbool.h>
+#include "../mcc_generated_files/adcc.h"
 
-void send();
+int getTemperature(adcc_channel_t pin);
 
-void recieve();    
-
+map(int valMin, int valMax, int outMin, int outMax, int val);
 
 #ifdef	__cplusplus
   // TODO If C++ is being used, regular C code needs function names to have C 
