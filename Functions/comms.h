@@ -9,20 +9,12 @@
 #ifndef COMMS_H
 #define	COMMS_H
 
-#include <xc.h> // include processor files - each processor file is guarded.  
-#include <stdint.h>
-#include <stdbool.h>
+#include "../mcc_generated_files/mcc.h" // Include MCC auto-generated files.
+#include "values.h"
 
-void send(const char message, int value);
+void send(adcc_channel_t channel, uint16_t data);
 
-const char recieve();    
-
-
-#ifdef	__cplusplus
-  // TODO If C++ is being used, regular C code needs function names to have C 
-  // linkage so the functions can be used by the c code. 
-extern "C" {
-#endif /* __cplusplus */
+void update();
 
 
 #endif	/* XC_HEADER_H */

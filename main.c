@@ -14,24 +14,31 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-
+    
+    // Sets the default values for the output data.
+    valueInitialise();
+        
     while (1)
     {
         // Transmit the values of the two temperature probes.
-        send("t1", getTemperature(adc_TEMP1));
-        send("t2", getTemperature(adc_TEMP2));
+        send(TEMP_1.pin,TEMP_1.getTemperature(&TEMP_1));
+        send(TEMP_2.pin,TEMP_2.getTemperature(&TEMP_2));
         
         // Transmit the values of the two hall effect sensors.
-        send("h1", getHall(adc_HALL1));
-        send("h2", getHall(adc_HALL2));
+        send(HALL_1.pin,HALL_1.getHall(&HALL_1));
+        send(HALL_2.pin,HALL_2.getHall(&HALL_2));
         
-        // Transmit the recorded decibel level.
-        send("vib", getVibration());
+        // Transmit the vibration values.
+        send(VIB.pin,VIB.getVibration(&VIB));
         
-        // Transmit the recorded vibration value.
-        send("noise", getNoise());
+        // Transmit the noise value.
+        send(NOISE.pin,NOISE.getNoise(&NOISE));
+        
+        // Reads the UART input to configure sensor outputs.
+        update();
     }
 }
-/**
+
+/*
  End of File
 */

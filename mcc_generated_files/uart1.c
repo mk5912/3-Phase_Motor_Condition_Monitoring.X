@@ -138,7 +138,8 @@ bool UART1_is_tx_done(void)
     return U1ERRIRbits.TXMTIF;
 }
 
-uart1_status_t UART1_get_last_status(void){
+uart1_status_t UART1_get_last_status(void)
+{
     return uart1RxLastError;
 }
 

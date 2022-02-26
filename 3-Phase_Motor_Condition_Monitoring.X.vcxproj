@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{78408e1f-930b-4912-bea5-7f6ce2948924}</ProjectGuid>
+    <RootNamespace>My3PhaseMotorConditionMonitoringX</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Functions\comms.c" />
+    <ClCompile Include="Functions\values.c" />
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\aspic.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\builtins.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\assert.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\conio.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\ctype.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\errno.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\float.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\hitech.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\iso646.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\limits.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\math.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\setjmp.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\stdarg.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\stdbool.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\stddef.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\stdint.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\stdio.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\stdlib.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\string.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\time.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c90\xc8debug.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\assert.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\atomic_arch.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\alltypes.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\assert.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\endian.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\fenv.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\float.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\ioctl.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\ioctl_fix.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\limits.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\stdint.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits\syscall.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\conio.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\ctype.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\endian.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\errno.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\features.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\fenv.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\float.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\inttypes.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\iso646.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\limits.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\math.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\musl_xc8.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\setjmp.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdarg.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdbool.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\stddef.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdint.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdlib.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\syscall.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\syscall_arch.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\sys\ioctl.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\sys\syscall.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\sys\uio.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\time.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\c99\xc8debug.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\caspic.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\cci.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\eeprom_routines.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\errata.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\htc.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\inline.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\itoption.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\language_support.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\p18cxxx.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\pic.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\pic18.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\pic_cas_chip_select.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\pic_chip_select.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f04q40.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\trace16.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\trace18.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\xc.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\__at.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\__null.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\__size_t.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files\Microchip\xc8\v2.32\pic\include\__unsupported.h" />
+    <ClInclude Include="Functions\comms.h" />
+    <ClInclude Include="Functions\values.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
