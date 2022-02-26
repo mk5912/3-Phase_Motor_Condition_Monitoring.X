@@ -21,3 +21,6 @@ My goal for this project is to have a functioning and viable product for monitor
 
 ### Terms of use:
 This code is open source and available to all who wish to use, modify or merge copies however, due to the lack of sufficien testing and being a project built as a University final year project further distribution is prohibitted. This project is being supplied "as is" and thus if any persons clone this repository for any purposes all liability lies with them and no warraties of any kind will be provided. If anyone who clones this repository encounters an issue please report it under the issues tab, however no claims against the author can be persued.
+
+Wakatime tracking (started late):
+[![wakatime](https://wakatime.com/badge/github/mk5912/3-Phase_Motor_Condition_Monitoring.X.svg)](https://wakatime.com/badge/github/mk5912/3-Phase_Motor_Condition_Monitoring.X)
