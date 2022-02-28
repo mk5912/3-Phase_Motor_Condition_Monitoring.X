@@ -14,7 +14,9 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-            
+    
+    value_Initialise();
+        
     while (1)
     {
         // Transmit the values of the two temperature probes.

@@ -54,7 +54,6 @@ void SYSTEM_Initialize(void)
     OSCILLATOR_Initialize();
     ADCC_Initialize();
     UART1_Initialize();
-    value_Initialise();
 }
 
 void OSCILLATOR_Initialize(void)
