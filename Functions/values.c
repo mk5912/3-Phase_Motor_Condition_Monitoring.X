@@ -6,7 +6,7 @@
 
 #include "values.h"
 
-void valueInitialise(){
+void value_Initialise(){
     
     TEMP_1.pin = adc_TEMP1; TEMP_2.pin = adc_TEMP2; HALL_1.pin = adc_HALL1; HALL_2.pin = adc_HALL2; VIB.pin = adc_VIB; NOISE.pin = adc_NOISE;
     

@@ -39,7 +39,7 @@ value HALL_2;
 value VIB;
 value NOISE;
 
-void valueInitialise();
+void value_Initialise();
 
 // Returns the value of the temperature probe mapped to be within the preset values.
 int getTemperature(value *self);

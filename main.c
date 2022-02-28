@@ -14,10 +14,7 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-    
-    // Sets the default values for the output data.
-    valueInitialise();
-        
+            
     while (1)
     {
         // Transmit the values of the two temperature probes.
