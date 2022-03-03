@@ -1,4 +1,4 @@
-<config configName="default" projectName="Test" configVersion="1.1" device="PIC18F04Q40" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.4.1">
+<config configName="default" projectName="Test" configVersion="1.1" device="PIC18F04Q40" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.3.3">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -10131,50 +10131,50 @@
          <value>Window delay time 87.5%</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>95fc1202f27f3f0ec4ee7996f855ca943e17df28ceb8d91aaa6958d97ac7489c</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>949647aa222d3e9f696cae7d0fcae0706ac275f1ed153cf75a8d960882c4e649</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\uart1.h</file>
-         <hash>5139543f3096d7fd190bb02767e8e2183a52f291296a7a8957787da4ca635fad</hash>
+         <file>main.c</file>
+         <hash>cacbfcf8f53708b8a9e743e7bc06776259b5e3a25b1463830579faae2782ecdd</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adcc.c</file>
          <hash>2170cd62d5ef92d4a4006e92700aadd1dab9d7e1bf35bf3605d8ee5c51f35bd4</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\uart1.c</file>
-         <hash>8af1f5149c7e1fd47856dae4710b6199e05017c5481b25f0ebd08030bfed5be0</hash>
-      </entry>
-      <entry>
-         <file>main.c</file>
-         <hash>cacbfcf8f53708b8a9e743e7bc06776259b5e3a25b1463830579faae2782ecdd</hash>
+         <file>mcc_generated_files\adcc.h</file>
+         <hash>c8f18cbf7bd4e420aa53b6bb2e98b5cd2bb475a0848b3136562eacc52c31043c</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.c</file>
          <hash>48db74ee81f8745ddbdd2e45fad45239812109f065a3b750fb957ae36a463fc4</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>1edaa54ad513d3cbe6e75e758364dd55f217a65db4a1d95edb4022bcdc72bc88</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adcc.h</file>
-         <hash>c8f18cbf7bd4e420aa53b6bb2e98b5cd2bb475a0848b3136562eacc52c31043c</hash>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>949647aa222d3e9f696cae7d0fcae0706ac275f1ed153cf75a8d960882c4e649</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
          <hash>e0e075dcb3905122eb9a3f82ac7161249de77a19bc649e50394d1aa4e8151518</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>95fc1202f27f3f0ec4ee7996f855ca943e17df28ceb8d91aaa6958d97ac7489c</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\pin_manager.c</file>
          <hash>a8eb1dc650e4e97eaec4636acbbf81dbd21f1c409c83825c7ba100c76550df75</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>1edaa54ad513d3cbe6e75e758364dd55f217a65db4a1d95edb4022bcdc72bc88</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart1.c</file>
+         <hash>8af1f5149c7e1fd47856dae4710b6199e05017c5481b25f0ebd08030bfed5be0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart1.h</file>
+         <hash>5139543f3096d7fd190bb02767e8e2183a52f291296a7a8957787da4ca635fad</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
