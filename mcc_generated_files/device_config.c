@@ -14,7 +14,7 @@
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
-        Device            :  PIC18F04Q40
+        Device            :  PIC18F13K50
         Driver Version    :  2.00
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.31 and above or later
@@ -46,54 +46,57 @@
 
 // Configuration bits: selected in the GUI
 
-// CONFIG1
-#pragma config FEXTOSC = OFF    // External Oscillator Selection->Oscillator not enabled
-#pragma config RSTOSC = HFINTOSC_1MHZ    // Reset Oscillator Selection->HFINTOSC with HFFRQ = 4 MHz and CDIV = 4:1
+// CONFIG1L
+#pragma config CPUDIV = NOCLKDIV    // CPU System Clock Selection bits->No CPU System Clock divide
+#pragma config USBDIV = OFF    // USB Clock Selection bit->USB clock comes directly from the OSC1/OSC2 oscillator block; no divide
 
-// CONFIG2
-#pragma config CLKOUTEN = OFF    // Clock out Enable bit->CLKOUT function is disabled
-#pragma config PR1WAY = ON    // PRLOCKED One-Way Set Enable bit->PRLOCKED bit can be cleared and set only once
-#pragma config CSWEN = ON    // Clock Switch Enable bit->Writing to NOSC and NDIV is allowed
-#pragma config FCMEN = ON    // Fail-Safe Clock Monitor Enable bit->Fail-Safe Clock Monitor enabled
-#pragma config FCMENP = ON    // Fail-Safe Clock Monitor - Primary XTAL Enable bit->Fail-Safe Clock Monitor enabled; timer will flag FSCMP bit and OSFIF interrupt on EXTOSC failure.
-#pragma config FCMENS = ON    // Fail-Safe Clock Monitor - Secondary XTAL Enable bit->Fail-Safe Clock Monitor enabled; timer will flag FSCMP bit and OSFIF interrupt on SOSC failure.
+// CONFIG1H
+#pragma config FOSC = IRC    // Oscillator Selection bits->Internal RC oscillator
+#pragma config PLLEN = OFF    // 4 X PLL Enable bit->PLL is under software control
+#pragma config PCLKEN = ON    // Primary Clock Enable bit->Primary clock enabled
+#pragma config FCMEN = OFF    // Fail-Safe Clock Monitor Enable->Fail-Safe Clock Monitor disabled
+#pragma config IESO = OFF    // Internal/External Oscillator Switchover bit->Oscillator Switchover mode disabled
 
-// CONFIG3
-#pragma config MCLRE = EXTMCLR    // MCLR Enable bit->If LVP = 0, MCLR pin is MCLR; If LVP = 1, RE3 pin function is MCLR 
-#pragma config PWRTS = PWRT_OFF    // Power-up timer selection bits->PWRT is disabled
-#pragma config MVECEN = OFF    // Multi-vector enable bit->Interrupt contoller does not use vector table to prioritze interrupts
-#pragma config IVT1WAY = ON    // IVTLOCK bit One-way set enable bit->IVTLOCKED bit can be cleared and set only once
-#pragma config LPBOREN = OFF    // Low Power BOR Enable bit->Low-Power BOR disabled
-#pragma config BOREN = SBORDIS    // Brown-out Reset Enable bits->Brown-out Reset enabled , SBOREN bit is ignored
+// CONFIG2L
+#pragma config PWRTEN = OFF    // Power-up Timer Enable bit->PWRT disabled
+#pragma config BOREN = SBORDIS    // Brown-out Reset Enable bits->Brown-out Reset enabled in hardware only (SBOREN is disabled)
+#pragma config BORV = 19    // Brown-out Reset Voltage bits->VBOR set to 1.9 V nominal
 
-// CONFIG4
-#pragma config BORV = VBOR_1P9    // Brown-out Reset Voltage Selection bits->Brown-out Reset Voltage (VBOR) set to 1.9V
-#pragma config ZCD = OFF    // ZCD Disable bit->ZCD module is disabled. ZCD can be enabled by setting the ZCDSEN bit of ZCDCON
-#pragma config PPS1WAY = ON    // PPSLOCK bit One-Way Set Enable bit->PPSLOCKED bit can be cleared and set only once; PPS registers remain locked after one clear/set cycle
+// CONFIG2H
+#pragma config WDTEN = OFF    // Watchdog Timer Enable bit->WDT is controlled by SWDTEN bit of the WDTCON register
+#pragma config WDTPS = 32768    // Watchdog Timer Postscale Select bits->1:32768
+
+// CONFIG3H
+#pragma config HFOFST = ON    // HFINTOSC Fast Start-up bit->HFINTOSC starts clocking the CPU without waiting for the oscillator to stablize.
+#pragma config MCLRE = ON    // MCLR Pin Enable bit->MCLR pin enabled; RA3 input pin disabled
+
+// CONFIG4L
 #pragma config STVREN = ON    // Stack Full/Underflow Reset Enable bit->Stack full/underflow will cause Reset
-#pragma config LVP = ON    // Low Voltage Programming Enable bit->Low voltage programming enabled. MCLR/VPP pin function is MCLR. MCLRE configuration bit is ignored
-#pragma config XINST = OFF    // Extended Instruction Set Enable bit->Extended Instruction Set and Indexed Addressing Mode disabled
+#pragma config LVP = ON    // Single-Supply ICSP Enable bit->Single-Supply ICSP enabled
+#pragma config BBSIZ = OFF    // Boot Block Size Select bit->512W boot block size
+#pragma config XINST = OFF    // Extended Instruction Set Enable bit->Instruction set extension and Indexed Addressing mode disabled (Legacy mode)
+#pragma config DEBUG = OFF    // Background Debugger Enable bit->Background debugger disabled, RA0 and RA1 configured as general purpose I/O pins
 
-// CONFIG5
-#pragma config WDTCPS = WDTCPS_31    // WDT Period selection bits->Divider ratio 1:65536; software control of WDTPS
-#pragma config WDTE = OFF    // WDT operating mode->WDT Disabled; SWDTEN is ignored
+// CONFIG5L
+#pragma config CP0 = OFF    // Code Protection bit->Block 0 not code-protected
+#pragma config CP1 = OFF    // Code Protection bit->Block 1 not code-protected
 
-// CONFIG6
-#pragma config WDTCWS = WDTCWS_7    // WDT Window Select bits->window always open (100%); software control; keyed access not required
-#pragma config WDTCCS = SC    // WDT input clock selector->Software Control
+// CONFIG5H
+#pragma config CPB = OFF    // Boot Block Code Protection bit->Boot block not code-protected
+#pragma config CPD = OFF    // Data EEPROM Code Protection bit->Data EEPROM not code-protected
 
-// CONFIG7
-#pragma config BBSIZE = BBSIZE_512    // Boot Block Size selection bits->Boot Block size is 512 words
-#pragma config BBEN = OFF    // Boot Block enable bit->Boot block disabled
-#pragma config SAFEN = OFF    // Storage Area Flash enable bit->SAF disabled
-#pragma config DEBUG = OFF    // Background Debugger->Background Debugger disabled
+// CONFIG6L
+#pragma config WRT0 = OFF    // Table Write Protection bit->Block 0 not write-protected
+#pragma config WRT1 = OFF    // Table Write Protection bit->Block 1 not write-protected
 
-// CONFIG8
-#pragma config WRTB = OFF    // Boot Block Write Protection bit->Boot Block not Write protected
-#pragma config WRTC = OFF    // Configuration Register Write Protection bit->Configuration registers not Write protected
-#pragma config WRTD = OFF    // Data EEPROM Write Protection bit->Data EEPROM not Write protected
-#pragma config WRTSAF = OFF    // SAF Write protection bit->SAF not Write Protected
-#pragma config WRTAPP = OFF    // Application Block write protection bit->Application Block not write protected
+// CONFIG6H
+#pragma config WRTC = OFF    // Configuration Register Write Protection bit->Configuration registers not write-protected
+#pragma config WRTB = OFF    // Boot Block Write Protection bit->Boot block not write-protected
+#pragma config WRTD = OFF    // Data EEPROM Write Protection bit->Data EEPROM not write-protected
 
-// CONFIG9
-#pragma config CP = OFF    // PFM and Data EEPROM Code Protection bit->PFM and Data EEPROM code protection disabled
+// CONFIG7L
+#pragma config EBTR0 = OFF    // Table Read Protection bit->Block 0 not protected from table reads executed in other blocks
+#pragma config EBTR1 = OFF    // Table Read Protection bit->Block 1 not protected from table reads executed in other blocks
+
+// CONFIG7H
+#pragma config EBTRB = OFF    // Boot Block Table Read Protection bit->Boot block not protected from table reads executed in other blocks

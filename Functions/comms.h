@@ -12,7 +12,7 @@
 #include "../mcc_generated_files/mcc.h" // Include MCC auto-generated files.
 #include "values.h"
 
-void send(adcc_channel_t channel, uint16_t data);
+void send(adc_channel_t channel, uint16_t data);
 
 void update();
 

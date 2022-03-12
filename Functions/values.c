@@ -24,17 +24,17 @@ void value_Initialise(){
 
 // Returns the value of the temperature probe mapped to be within the preset values.
   int getTemperature(value *this) {
-      return floor(map(0, 4095, this->mapOutMin, this->mapOutMax, ADCC_GetSingleConversion(this->pin)));
+      return floor(map(0, 4095, this->mapOutMin, this->mapOutMax, ADC_GetConversion(this->pin)));
   }
 
   // Returns the current value of the selected hall effect sensor.
   unsigned int getHall(value *this){
-      return floor(map(0, 4095, this->mapOutMin, this->mapOutMax, ADCC_GetSingleConversion(this->pin)));
+      return floor(map(0, 4095, this->mapOutMin, this->mapOutMax, ADC_GetConversion(this->pin)));
   }
   
   // Returns the decibel value of noise.
   double getNoise(value *this){
-      double noise = map(0, 4095, this->mapOutMin, this->mapOutMax, ADCC_GetSingleConversion(this->pin));
+      double noise = map(0, 4095, this->mapOutMin, this->mapOutMax, ADC_GetConversion(this->pin));
 
       return log10(noise);
   }
@@ -42,7 +42,7 @@ void value_Initialise(){
   // Returns the current vibration of the monitoring device.
   double getVibration(value *this){
 //      int vib = ADCC_GetSingleConversion(this.pin);
-      double vib = map(0, 4095, this->mapOutMin, this->mapOutMax, ADCC_GetSingleConversion(this->pin));
+      double vib = map(0, 4095, this->mapOutMin, this->mapOutMax, ADC_GetConversion(this->pin));
       
       return log10(vib);
   }

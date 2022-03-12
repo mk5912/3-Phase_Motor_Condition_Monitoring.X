@@ -10,7 +10,7 @@ My goal for this project is to have a functioning and viable product for monitor
 
 ### How I plan to achieve this goal:
 - I have already started by identifying the components that I will use which are (excluding a few others) as follows;
-  1. PIC18F04Q40 microprocessor
+  1. PIC18F13K50 microprocessor
   2. Solid state linear current sensor
   3. Condenser microphone
   4. K type thermocouple

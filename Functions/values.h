@@ -22,7 +22,7 @@ struct value{
   // Maximum output value for the send function.
   double mapOutMax;
   // Pin for the created sensor.
-  adcc_channel_t pin;
+  adc_channel_t pin;
   
   int (*getTemperature)(value *);
   unsigned int (*getHall)(value *);

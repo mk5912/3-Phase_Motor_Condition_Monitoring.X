@@ -7,17 +7,17 @@
 
 #include "comms.h"
 
-void send(adcc_channel_t channel, uint16_t data) {
+void send(adc_channel_t channel, uint16_t data) {
     
-    if (UART1_is_tx_ready()){
-        while (!UART1_is_tx_done()){
-            UART1_Write("%channel");
+    if (EUSART1_is_tx_ready()){
+        while (!EUSART1_is_tx_done()){
+            EUSART1_Write("%channel");
         }
     }
 
-    if (UART1_is_tx_ready()){
-        while (!UART1_is_tx_done()){
-            UART1_Write(data);
+    if (EUSART1_is_tx_ready()){
+        while (!EUSART1_is_tx_done()){
+            EUSART1_Write(data);
         }
     }
 }
@@ -25,14 +25,14 @@ void send(adcc_channel_t channel, uint16_t data) {
 void update(){
     char mod, var = NULL;
     double data;
-    if (UART1_is_rx_ready()){
-        mod = UART1_Read();
+    if (EUSART1_is_rx_ready()){
+        mod = EUSART1_Read();
     }
-    if (UART1_is_rx_ready() && mod != NULL){
-        var = UART1_Read();
+    if (EUSART1_is_rx_ready() && mod != NULL){
+        var = EUSART1_Read();
     }
-    if (UART1_is_rx_ready() && var != NULL){
-        data = UART1_Read();
+    if (EUSART1_is_rx_ready() && var != NULL){
+        data = EUSART1_Read();
     }
     if (data){
         if (var == "mapOutMin"){
