@@ -1,4 +1,5 @@
 build
 dist
-*.bak*
+*.bak
+*.bak0
 *.workspace
