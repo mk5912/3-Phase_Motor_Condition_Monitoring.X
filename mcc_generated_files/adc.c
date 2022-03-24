@@ -63,8 +63,8 @@ void ADC_Initialize(void)
 {
     // set the ADC to the options selected in the User Interface
     
-    // NVCFG0 external; PVCFG0 external; 
-    ADCON1 = 0x05;
+    // NVCFG0 VSS; PVCFG0 external; 
+    ADCON1 = 0x04;
     
     // ADFM right; ACQT 0; ADCS FOSC/2; 
     ADCON2 = 0x80;

@@ -3,6 +3,10 @@
  * Device: PIC18F04Q40 
  */
 
+#ifndef _18F13K50
+#define _18F13K50
+#endif
+
 #include "mcc_generated_files/mcc.h"
 #include "Functions/comms.h"
 #include "Functions/values.h"

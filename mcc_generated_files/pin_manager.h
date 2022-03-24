@@ -131,16 +131,6 @@
 #define RC0_SetAnalogMode()         do { ANSELbits.ANS4 = 1; } while(0)
 #define RC0_SetDigitalMode()        do { ANSELbits.ANS4 = 0; } while(0)
 
-// get/set RC1 procedures
-#define RC1_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
-#define RC1_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
-#define RC1_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
-#define RC1_GetValue()              PORTCbits.RC1
-#define RC1_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
-#define RC1_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
-#define RC1_SetAnalogMode()         do { ANSELbits.ANS5 = 1; } while(0)
-#define RC1_SetDigitalMode()        do { ANSELbits.ANS5 = 0; } while(0)
-
 // get/set adc_HALL1 aliases
 #define adc_HALL1_TRIS                 TRISCbits.TRISC2
 #define adc_HALL1_LAT                  LATCbits.LATC2

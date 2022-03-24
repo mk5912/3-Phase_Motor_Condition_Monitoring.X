@@ -3,3 +3,10 @@ dist
 *.bak
 *.bak0
 *.workspace
+*.pdsbak
+*.rte
+*.pdsbak
+*.log
+*.sts
+*.EDF
+*.DO

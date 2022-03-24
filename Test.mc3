@@ -112,7 +112,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="dependentModuleKey"/>
-         <value>1</value>
+         <value>12</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="enableInterrupt"/>
@@ -288,7 +288,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADCON1"/>
-         <value>5</value>
+         <value>4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADCON2"/>
@@ -316,7 +316,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADNREF"/>
-         <value>external</value>
+         <value>VSS</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADPREF"/>
@@ -412,7 +412,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="EUSART1" name="useStdio"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="EUSART1" registerAlias="BAUDCON" settingAlias="ABDEN" alias="disabled"/>
@@ -584,7 +584,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="EUSART1" registerAlias="BAUDCON"/>
-         <value>8</value>
+         <value>10</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="EUSART1" registerAlias="RCSTA"/>
@@ -632,7 +632,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="EUSART1" registerAlias="BAUDCON" settingAlias="WUE"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="EUSART1" registerAlias="RCI" settingAlias="enable"/>
@@ -1986,7 +1986,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\eusart1.h</file>
-         <hash>905296c8e0b35dcb1857c7a1f34be62238537b5d879858aef0daba574e62a22b</hash>
+         <hash>2625a8bbb7b27b50fcf70c03e6813c8e4a9ca085780bc70fda91cc3ccad4fdbc</hash>
       </entry>
       <entry>
          <file>main.c</file>
@@ -1994,7 +1994,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\adc.c</file>
-         <hash>1631ae6298c4c8e4800078326c1ad4e274bb68b8a28de953b36da02531863c06</hash>
+         <hash>78b6b0a265735b0d5fa9eecb56dd9f68dbcbd12d3fee4c80cf2ba51bc091a13e</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.c</file>
@@ -2002,7 +2002,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>c2a0bd75a13612712122c06a6bc7134fdf89c598b8b4093dcf11acecc0ad406e</hash>
+         <hash>c876a361c14d95530a80febe6d5ba8ed95c367302d1faa4e8244facefefeb3e5</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
@@ -2018,7 +2018,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\eusart1.c</file>
-         <hash>e52c4405634fc5f2797a23f076a3618480cd00689a3b9eae48c889d33d4f0807</hash>
+         <hash>c38e3879b727d79242d9f469e43a55c75d297a9fd4452650ee1be81c6b18c6df</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
