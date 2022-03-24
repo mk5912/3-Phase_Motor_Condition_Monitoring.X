@@ -2,6 +2,7 @@ build
 dist
 *.bak
 *.bak0
+*.bak1
 *.workspace
 *.pdsbak
 *.rte
