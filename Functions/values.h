@@ -59,5 +59,5 @@ double getVibration(value this);
 
 double map(int valMin, int valMax, double outMin, double outMax, int val);
 
-#endif	/* XC_HEADER_H */
+#endif	/* VALUES_H */
 
