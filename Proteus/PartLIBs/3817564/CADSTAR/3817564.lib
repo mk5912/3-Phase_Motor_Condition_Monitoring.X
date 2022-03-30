@@ -1,0 +1,19 @@
+.3817564 :1 ;Miniature PCB Socket Connector PCB Mounting Socket For Type K Thermocouple
+"3817564"
+*STM J
+*NGS
+*PNM 1=1 2=2 3=MH1
+*PLB 1="1" 2="2" 3="MH1"
+*MXP 3
+*DFN 3817564
+~!Manufacturer_Name (RS Components)
+~!Manufacturer_Part_Number (3817564)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://docs.rs-online.com/edff/0900766b815bb578.pdf)
+~!Height (8mm)
+~!3D_Model (3817564)
+"3817564"
+1.1!U 2.1!U 3.1!U 

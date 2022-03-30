@@ -1,0 +1,112 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "3817564"
+   (description "Miniature PCB Socket Connector PCB Mounting Socket For Type K Thermocouple")
+   (family "CON")
+   (package "3817564")
+   (attribute "Datasheet Link" "https://docs.rs-online.com/edff/0900766b815bb578.pdf")
+   (attribute "Geometry.Height" "8mm")
+   (attribute "Manufacturer_Name" "RS Components")
+   (attribute "Manufacturer_Part_Number" "3817564")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "3817564")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "MH1" MH1 PS)
+   )
+  )
+  (symbol "3817564"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 900 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "3817564"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.35 4.25)
+      (pt 12.25 4.25)
+      (pt 12.25 -16.25)
+      (pt -4.35 -16.25)
+      (pt -4.35 4.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -4.35 4.25)
+      (pt 12.25 4.25)
+      (pt 12.25 -16.25)
+      (pt -4.35 -16.25)
+      (pt -4.35 4.25))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -5.35 5.25)
+      (pt 13.25 5.25)
+      (pt 13.25 -17.25)
+      (pt -5.35 -17.25)
+      (pt -5.35 5.25))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt 7.900 0.000) (padstack 0))
+   (leg MH1 (pt 3.950 -10.250) (padstack 3))
+   (padstack 0
+    (hole 1.5)
+    (plated true)
+    (pad (layer TCOP) (round 2.250))
+    (pad (layer INNER) (round 2.250))
+    (pad (layer BCOP) (round 2.250))
+   )
+   (padstack 3
+    (hole 2.9)
+    (plated true)
+    (pad (layer TCOP) (round 4.350))
+    (pad (layer INNER) (round 4.350))
+    (pad (layer BCOP) (round 4.350))
+   )
+   (model "3817564.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

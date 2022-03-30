@@ -1,0 +1,72 @@
+(Japanese_coding: sjis)
+(function "ECS_14615286"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-06-15-09:28:06)
+    (utime 2021-06-15-09:28:06)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "MH1" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "3817564")
+)
+
+
+(pinAssign "ECS_14615286"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-06-15-09:28:06)
+    (utime 2021-06-15-09:28:06)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "MH1" (symbPinId 3) (portName "MH1") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_14615286")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "MH1" (match "MH1"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "3817564")
+)
+
+
+(part "3817564"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-06-15-09:28:06)
+    (utime 2021-06-15-09:28:06)
+    (packageRef "3817564")
+    (pinAssignRef "ECS_14615286")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "MH1" (symbPinId 3) (portName "MH1") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "J")
+    (property "description" "Miniature PCB Socket Connector PCB Mounting Socket For Type K Thermocouple")
+    (property "Manufacturer_Name" "RS Components")
+    (property "Manufacturer_Part_Number" "3817564")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "Arrow_Part_Number" "")
+    (property "Arrow_Price/Stock" "")
+    (property "Datasheet_Link" "https://docs.rs-online.com/edff/0900766b815bb578.pdf")
+    (property "compAreaTopHeight" 8)
+)
+
+

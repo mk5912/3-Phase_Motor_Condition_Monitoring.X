@@ -4,7 +4,7 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>3-Phase_Motor_Condition_Monitoring</name>
-            <creation-uuid>886d53f2-f058-402d-b9ae-8522a6ff5d8d</creation-uuid>
+            <creation-uuid>c485e8fa-2915-499b-b3f9-263adf152c00</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
             <cpp-extensions/>
@@ -13,7 +13,8 @@
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>
-                <sourceRootElem>.</sourceRootElem>
+                <sourceRootElem>Functions</sourceRootElem>
+                <sourceRootElem>.git</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

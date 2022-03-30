@@ -67,8 +67,8 @@ void EUSART1_Initialize(void)
 {
     // Set the EUSART1 module to the options selected in the user interface.
 
-    // ABDOVF no_overflow; CKTXP async_noninverted_sync_fallingedge; BRG16 16bit_generator; WUE enabled; ABDEN disabled; DTRXP not_inverted; 
-    BAUDCON = 0x0A;
+    // ABDOVF no_overflow; CKTXP async_noninverted_sync_fallingedge; BRG16 16bit_generator; WUE disabled; ABDEN enabled; DTRXP not_inverted; 
+    BAUDCON = 0x09;
 
     // SPEN enabled; RX9 8-bit; CREN enabled; ADDEN disabled; SREN disabled; 
     RCSTA = 0x90;
@@ -138,15 +138,6 @@ void EUSART1_Write(uint8_t txData)
     TXREG = txData;    // Write the data byte to the USART.
 }
 
-char getch(void)
-{
-    return EUSART1_Read();
-}
-
-void putch(char txData)
-{
-    EUSART1_Write(txData);
-}
 
 
 

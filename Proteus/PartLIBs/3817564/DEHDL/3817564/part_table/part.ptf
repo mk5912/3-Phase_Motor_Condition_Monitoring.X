@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '3817564'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "RS Components", "3817564" (!) = "", "3817564", "Other", "", "", "", "", "Miniature PCB Socket Connector PCB Mounting Socket For Type K Thermocouple", "https://docs.rs-online.com/edff/0900766b815bb578.pdf", "8 mm"
+END_PART
+
+END.

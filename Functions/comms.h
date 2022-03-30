@@ -12,9 +12,7 @@
 #include "../mcc_generated_files/mcc.h" // Include MCC auto-generated files.
 #include "values.h"
 
-void send(adc_channel_t channel, uint16_t data);
-
-void update();
+void send(unsigned char channel, double data);
 
 
 #endif	/* XC_HEADER_H */

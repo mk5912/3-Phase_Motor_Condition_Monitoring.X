@@ -94,12 +94,10 @@ typedef struct
 
 typedef enum
 {
-    adc_VIB =  0x3,
-    adc_HALL1 =  0x6,
-    adc_TEMP1 =  0x7,
-    adc_TEMP2 =  0x8,
-    adc_NOISE =  0x9,
-    adc_HALL2 =  0xA,
+    adc_HALL1 =  0x5,
+    adc_HALL2 =  0x6,
+    adc_NOISE =  0x7,
+    adc_VIB =  0x8,
     channel_DAC =  0xE,
     channel_FVR =  0xF
 } adc_channel_t;

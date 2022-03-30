@@ -13,6 +13,15 @@
 #include <math.h> // Includes mathematical advanced functions.
 #include "../mcc_generated_files/mcc.h" // Includes MCC auto-generated files.
 
+typedef enum
+{
+    pin_HALL1 =  adc_HALL1,
+    pin_HALL2 =  adc_HALL2,
+    pin_NOISE =  adc_NOISE,
+    pin_VIB =  adc_VIB,
+    pin_TEMP1 = 0x4,
+    pin_TEMP2 = 0x5
+} pin;
 
 typedef struct value value, ptr;
 
@@ -22,12 +31,7 @@ struct value{
   // Maximum output value for the send function.
   double mapOutMax;
   // Pin for the created sensor.
-  adc_channel_t pin;
-  
-  int (*getTemperature)(value *);
-  unsigned int (*getHall)(value *);
-  double (*getVibration)(value *);
-  double (*getNoise)(value *);
+  pin pin;
 };
 
 // Initialising the sensor objects.
@@ -39,19 +43,19 @@ value HALL_2;
 value VIB;
 value NOISE;
 
-void value_Initialise();
+void values_Initialise();
 
 // Returns the value of the temperature probe mapped to be within the preset values.
-int getTemperature(value *self);
+double getTemperature(value this);
 
 // Returns the current value of the selected hall effect sensor.
-unsigned int getHall(value *self);
+unsigned int getHall(value this);
 
 // Returns the decibel value of noise.
-double getNoise(value *self);
+double getNoise(value this);
 
 // Returns the current vibration of the monitoring device.
-double getVibration(value *self);
+double getVibration(value this);
 
 double map(int valMin, int valMax, double outMin, double outMax, int val);
 
