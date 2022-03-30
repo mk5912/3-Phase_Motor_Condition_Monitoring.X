@@ -1,6 +1,6 @@
 /*
  * Author: Daniel Hickey
- * Device: PIC18F04Q40 
+ * Device: PIC18F13K50 
  */
 
 #ifndef _18F13K50
