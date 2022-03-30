@@ -15,5 +15,5 @@
 void send(unsigned char channel, double data);
 
 
-#endif	/* XC_HEADER_H */
+#endif	/* COMMS_H */
 
