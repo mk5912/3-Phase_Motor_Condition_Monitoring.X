@@ -9,7 +9,6 @@
 #ifndef COMMS_H
 #define	COMMS_H
 
-#include "../mcc_generated_files/mcc.h" // Include MCC auto-generated files.
 #include "values.h"
 
 void send(unsigned char channel, double data);
