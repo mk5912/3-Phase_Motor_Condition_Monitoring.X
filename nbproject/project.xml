@@ -14,7 +14,6 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>Functions</sourceRootElem>
-                <sourceRootElem>.git</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

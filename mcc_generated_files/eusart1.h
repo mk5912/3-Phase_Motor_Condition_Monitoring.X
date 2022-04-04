@@ -51,9 +51,9 @@
   Section: Included Files
 */
 
-#include <C:/Program Files/Microchip/xc8/v2.36/pic/include/xc.h>
-#include <C:/Program Files/Microchip/xc8/v2.36/pic/include/c90/stdbool.h>
-#include <C:/Program Files/Microchip/xc8/v2.36/pic/include/c90/stdint.h>
+#include <xc.h>
+#include <stdbool.h>
+#include <stdint.h>
 
 #ifdef __cplusplus  // Provide C++ Compatibility
 
