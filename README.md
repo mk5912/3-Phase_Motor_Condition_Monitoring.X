@@ -21,6 +21,11 @@ My goal for this project was to have a functioning and viable product for monito
 - Once the circuit and code have both been refined and made into a viable product I will work on a computer software to communicate with the device to display and log the sensor value.
 - After a suitable HMI software has been produce I will make a physical product to test and fine tune the system.
 
+### Addition information:
+- I indend on converting the communication system to be Ethernet from USB.
+- There will no longer be any neccesity to work on this project so it will purely be a hobby.
+- This project was started as my university project so earlier (before 04/04/2022) are controlled under their copyright restrictions, newer commits will be changed heavily from the old and will be open source.
+- Though this project is now open source, I can claim no liabilty for if you do use it and damage parts! Please read the Terms of use (licencing) below.
 
 ### Terms of use:
 This project is open source and available to all who wish to use, modify or merge copies however, due to the lack of sufficien testing and being a project built as a University final year project further distribution is prohibitted. This project is being supplied "as is" and thus if any persons clone this repository for any purposes all liability lies with them and no warraties of any kind will be provided. If anyone who clones this repository encounters an issue please report it under the issues tab, however no claims against the author can be persued.
